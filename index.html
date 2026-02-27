@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Axel | Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-pic"></div>
+        <h1>Axel</h1>
+        <p class="bio">571-/9A</p>
+
+        <div id="Contacto"></div>
+
+        <a href="https://www.tiktok.com/@biiith_?_r=1&_t=zn-94bkaezsoow" class="link-btn">
+            <img src="foclos/tiktok.png" alt="" class="btn-icon">
+            TikTok
+        </a>
+        <a href="https://www.instagram.com/bith.__?igsh=MWIzZ3pscDUzbmdkcQ==" class="link-btn">
+            <img src="foclos/insgram.png" alt="" class="btn-icon">
+            Instagram
+        </a>
+        <a href="https://x.com/Bith_si" class="link-btn">
+            <img src="foclos/x.png" alt="" class="btn-icon">
+            X
+        </a>
+        <a href="https://boxd.it/8NbER" class="link-btn">
+            <img src="foclos/letterboxd.png" alt="" class="btn-icon">
+            Letterboxd
+        </a>
+        <a href="https://steamcommunity.com/profiles/76561199105208817" class="link-btn">
+            <img src="foclos/steam.png" alt="" class="btn-icon">
+            Steam
+        </a>
+        <a href="https://discord.com/users/539858427732688908" class="link-btn">
+            <img src="foclos/discord.png" alt="" class="btn-icon">
+            Discord
+        </a>
+        <a href="https://www.linkedin.com/in/axel-martinez-hernandez-999a482b4" class="link-btn">
+            <img src="foclos/linkedin.webp" alt="" class="btn-icon">
+            LinkedIn
+        </a>
+        <a href="PON_AQUI_TU_PLAYLIST_DE_YOUTUBE_MUSIC" class="link-btn">
+            <img src="icono-musica.png" alt="" class="btn-icon">
+            Música / Grupos
+        </a>
+        
+    </div>
+
+    <script>
+
+        const cHx = "23373533393531";
+        
+
+        const dHx = (h) => h.match(/.{1,2}/g).map(b => String.fromCharCode(parseInt(b, 16))).join('');
+
+
+        if (window.location.hash === dHx(cHx)) {
+            
+
+            const DvO = "MzU4MTk3Njk2NDM=";
+            const NR = atob(DvO).split('').reverse().join('');
+
+
+            document.getElementById('Contacto').innerHTML = `
+                <details class="dropdown">
+                    <summary class="link-btn" style="border-color: #238636;">
+                        <img src="icono-contacto.png" alt="" class="btn-icon">
+                        Contacto Directo
+                    </summary>
+                    <div class="dropdown-content">
+                        <a href="tel:+${NR}" class="dropdown-btn">
+                            <img src="foclos/contacto.png" alt="" class="btn-icon">
+                            Guardar Número
+                        </a>
+                        <a href="https://wa.me/${NR}" class="dropdown-btn">
+                            <img src="foclos/wasap.png" alt="" class="btn-icon">
+                            WhatsApp
+                        </a>
+                    </div>
+                </details>
+            `;
+        }
+    </script>
+</body>
+</html>
